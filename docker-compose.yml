@@ -125,10 +125,10 @@ services:
       - mysql_lib_data:/var/lib/mysql
     init: true
     cgroup: private
-    security_opt:
-      - no-new-privileges
-    cap_drop:
-      - ALL
+    # security_opt:
+    #   - no-new-privileges
+    # cap_drop:
+    #   - ALL
     cap_add:
       - SYS_NICE
     tmpfs:
